@@ -25,7 +25,8 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#work"
-              className="focus-ring rounded-full bg-[var(--color-text)] px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80"
+              className="focus-ring rounded-full bg-[var(--color-text)] px-6 py-3 text-sm font-medium !text-white text-white transition-opacity hover:opacity-80"
+              style={{ color: "#ffffff" }}
             >
               Explore my work
             </a>
@@ -65,13 +66,13 @@ export function Portrait() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 pb-20 md:px-12 md:pb-28">
       <Reveal>
-        <div className="relative aspect-[16/10] w-full overflow-hidden border border-[var(--color-border)] bg-[#f3f3f3] sm:aspect-[21/9] md:aspect-[21/8]">
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:rounded-3xl border border-[var(--color-border)] bg-[#f3f3f3] sm:aspect-[21/9] md:aspect-[21/8]">
           <Image
             src={personal.portrait}
             alt={personal.portraitAlt}
             fill
             sizes="100vw"
-            className="object-cover grayscale transition-transform duration-700 ease-out hover:scale-[1.02]"
+            className="object-cover transition-transform duration-700 ease-out hover:scale-[1.02]"
             priority
           />
         </div>
