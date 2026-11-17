@@ -8,7 +8,7 @@ import type { Project } from "@/data/projects";
 export default function ProjectMockup({ project }: { project: Project }) {
   return (
     <div
-      className="relative flex aspect-[4/3] w-full items-end overflow-hidden"
+      className="relative flex aspect-[4/3] w-full items-end overflow-hidden rounded-2xl md:rounded-3xl"
       style={{ backgroundColor: project.color }}
     >
       <svg

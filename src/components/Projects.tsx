@@ -28,7 +28,7 @@ export default function Projects() {
               href={`/projects/${project.slug}`}
               className="focus-ring group block"
             >
-              <div className="overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.015]">
+              <div className="overflow-hidden rounded-2xl md:rounded-3xl transition-transform duration-500 ease-out group-hover:scale-[1.015]">
                 <ProjectMockup project={project} />
               </div>
               <div className="mt-5 flex items-start justify-between gap-4 border-t border-[var(--color-border)] pt-4">
